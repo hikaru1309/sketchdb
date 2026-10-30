@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data: blob:; font-src 'self'; worker-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'" />
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/sketchdb/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SketchDBについて | CREATE TABLE文からER図を作る無料ツール</title>
+    <meta
+      name="description"
+      content="SketchDBは、CREATE TABLE文を貼り付けるだけでER図を作れる無料のWebツールです。mysqldump・pg_dumpの出力もそのまま読めます。COMMENTを論理名として表示でき、SQLは外部に送信されません。"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="SketchDB" />
+    <meta property="og:locale" content="ja_JP" />
+    <meta property="og:url" content="https://hikaru1309.github.io/sketchdb/about.html" />
+    <meta property="og:title" content="SketchDBについて | CREATE TABLE文からER図を作る無料ツール" />
+    <meta
+      property="og:description"
+      content="CREATE TABLE文を貼るだけでER図に。MySQL・PostgreSQL・SQLite・SQL Server対応、COMMENTを論理名で表示。SQLは外部に送信されません。"
+    />
+    <meta property="og:image" content="https://hikaru1309.github.io/sketchdb/ogp.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="canonical" href="https://hikaru1309.github.io/sketchdb/about.html" />
+    <!-- 画面が白→黒にちらつかないように、描画の前に配色を決める（ツール画面と同じ設定を使う） -->
+    <script src="/sketchdb/theme.js"></script>
+    <link rel="stylesheet" crossorigin href="/sketchdb/assets/about-DQPPJy3w.css">
+  </head>
+  <body class="about">
+    <header class="about-head">
+      <a class="brand" href="./">
+        <svg class="i logo" viewBox="0 0 24 24" aria-hidden="true">
+          <ellipse cx="12" cy="5" rx="9" ry="3" />
+          <path d="M3 5v14a9 3 0 0 0 18 0V5" />
+          <path d="M3 12a9 3 0 0 0 18 0" />
+        </svg>
+        SketchDB
+        <span class="beta">Beta</span>
+      </a>
+      <a class="button primary" href="./">ツールを開く</a>
+    </header>
+
+    <main>
+      <section class="hero">
+        <!-- 狭い画面でも、言葉の途中で折り返さないように区切っておく -->
+        <h1><span>CREATE TABLE文を</span><span>貼るだけで、</span><span>ER図を作成</span></h1>
+        <p class="lead">
+          SketchDBは、データベースのテーブル定義（CREATE TABLE文）からER図を作る無料のWebツールです。
+          登録は不要で、SQLは外部に送信されません。
+        </p>
+        <a class="button primary large" href="./">無料で使ってみる</a>
+        <img class="screenshot" src="/sketchdb/screenshot.jpg" width="1920" height="1140" alt="SketchDBの画面。左にSQL、右にER図が表示されている" />
+      </section>
+
+      <section>
+        <h2>できること</h2>
+        <ul class="features">
+          <li>
+            <h3>貼るだけでER図に</h3>
+            <p>CREATE TABLE文を貼ると、その場でテーブルとリレーション（外部キーのつながり）を図にします。書いている途中でも図が更新されます。</p>
+          </li>
+          <li>
+            <h3>ダンプの出力もそのまま</h3>
+            <p>MySQL・PostgreSQL・MariaDB・SQL Server・SQLite に対応（自動判定）。mysqldump・pg_dump・SQLite の .dump・SQL Server Management Studio のスクリプトの出力なども、余計な部分を消さずにそのまま貼れます。</p>
+          </li>
+          <li>
+            <h3>COMMENTを論理名で表示</h3>
+            <p>カラムやテーブルの COMMENT を「論理名」として表示できます。「user_id」ではなく「会員ID」のように、日本語の名前で図を作れます。</p>
+          </li>
+          <li>
+            <h3>テーブル定義書</h3>
+            <p>テーブルごとのカラム一覧（論理名・物理名・型・主キー・外部キー・NOT NULL・デフォルト値）を表示し、書式付きの Excel（表紙・テーブル一覧・テーブルごとのシート）、Markdown・CSV・PDF で保存できます。</p>
+          </li>
+          <li>
+            <h3>テンプレート</h3>
+            <p>ECサイト・SaaS基盤・ブログ・予約システム・社員と勤怠のサンプルを用意しています。手元にSQLがなくても、すぐに試せます。</p>
+          </li>
+          <li>
+            <h3>画像や Mermaid で保存</h3>
+            <p>PNG（資料やスライド向け）と SVG（拡大してもぼやけない）で保存できます。Mermaid でコピーすれば、GitHub の README や Qiita にそのまま図として貼れます。テーブルの位置はドラッグで調整できます。</p>
+          </li>
+          <li>
+            <h3>SQLは外部に送信されない</h3>
+            <p>解析はすべてブラウザの中で行います。社内のテーブル定義でも、サーバーに送られる心配はありません。</p>
+          </li>
+          <li>
+            <h3>画面でテーブルを編集</h3>
+            <p>「＋ テーブル」で新しいテーブルを作ったり、図のテーブルをダブルクリックして列を足したりできます。テーブルの右端の ○ から別のテーブルへ線を引くと、外部キーも作れます。左のSQLは、編集したテーブルの部分だけが書き換わり、AUTO_INCREMENT や索引などの書き方も残ります。元に戻す・やり直しもできます。</p>
+          </li>
+          <li>
+            <h3>ダークモード・スマホ対応</h3>
+            <p>明るい配色と暗い配色を切り替えられます。スマホでも図を確認できます。</p>
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>使い方</h2>
+        <ol class="steps">
+          <li><b>1</b>左の欄に CREATE TABLE 文を貼り付ける</li>
+          <li><b>2</b>右側にER図ができる。テーブルはドラッグで動かせて、ダブルクリックで編集もできる</li>
+          <li><b>3</b>「保存」から PNG / SVG で保存、または Mermaid でコピーする</li>
+        </ol>
+      </section>
+
+      <section>
+        <h2>よくある質問</h2>
+        <div class="faq">
+          <details>
+            <summary>無料で使えますか？</summary>
+            <p>はい、無料で使えます。会員登録も不要です。</p>
+          </details>
+          <details>
+            <summary>貼り付けたSQLはどこかに送信されますか？</summary>
+            <p>
+              送信されません。SQLの解析と図の作成は、すべてお使いのブラウザの中で行います。
+              さらに、ブラウザのセキュリティ機能（Content-Security-Policy）で、ページの中のプログラムが外部と通信すること（fetch や外部の画像・スクリプトの読み込みなど）を禁止しています。
+              次に開いたときのために、SQLとテーブルの位置をこのブラウザの中（localStorage）に保存しますが、外部には送りません。
+            </p>
+          </details>
+          <details>
+            <summary>どのSQLに対応していますか？</summary>
+            <p>
+              MySQL・PostgreSQL・MariaDB・SQL Server・SQLite の CREATE TABLE、ALTER TABLE（外部キー・主キーの追加）、COMMENT ON、SQL Server の説明（MS_Description）に対応しています。
+              INSERT や SET などER図に関係ない文は読み飛ばすので、ダンプの出力もそのまま貼れます。
+              Prisma Schema などへの対応も予定しています。
+            </p>
+          </details>
+          <details>
+            <summary>作った図は仕事で使ってもいいですか？</summary>
+            <p>はい。保存した画像は、設計書や資料などに自由に使えます。</p>
+          </details>
+          <details>
+            <summary>読めないSQLがありました</summary>
+            <p>
+              お手数ですが、<a href="https://forms.gle/hGxAKpNa1odaFe4V9" target="_blank" rel="noopener" data-feedback>ご意見・不具合の報告</a>
+              から教えてください。読めなかった部分を教えていただけると、対応の参考になります。
+            </p>
+          </details>
+        </div>
+      </section>
+
+      <section class="cta">
+        <a class="button primary large" href="./">SketchDBを開く</a>
+      </section>
+    </main>
+
+    <footer class="about-foot">
+      <a href="./terms.html">利用規約・プライバシー</a>
+      <a href="https://forms.gle/hGxAKpNa1odaFe4V9" target="_blank" rel="noopener" data-feedback>ご意見・不具合の報告</a>
+      <span>© 2026 SketchDB</span>
+    </footer>
+  </body>
+</html>

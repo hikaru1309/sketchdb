@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data: blob:; font-src 'self'; worker-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'" />
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/sketchdb/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>利用規約・プライバシーポリシー | SketchDB</title>
+    <meta name="description" content="SketchDB の利用規約とプライバシーポリシー、使用しているソフトウェアのライセンス。" />
+    <link rel="canonical" href="https://hikaru1309.github.io/sketchdb/terms.html" />
+    <!-- 画面が白→黒にちらつかないように、描画の前に配色を決める（ツール画面と同じ設定を使う） -->
+    <script src="/sketchdb/theme.js"></script>
+    <link rel="stylesheet" crossorigin href="/sketchdb/assets/about-DQPPJy3w.css">
+  </head>
+  <body class="about">
+    <header class="about-head">
+      <a class="brand" href="./">
+        <svg class="i logo" viewBox="0 0 24 24" aria-hidden="true">
+          <ellipse cx="12" cy="5" rx="9" ry="3" />
+          <path d="M3 5v14a9 3 0 0 0 18 0V5" />
+          <path d="M3 12a9 3 0 0 0 18 0" />
+        </svg>
+        SketchDB
+        <span class="beta">Beta</span>
+      </a>
+      <a class="button primary" href="./">ツールを開く</a>
+    </header>
+
+    <main class="legal">
+      <h1>利用規約・プライバシーポリシー</h1>
+      <p class="legal-date">制定日：2026年10月26日 ／ 改定日：2026年10月30日</p>
+      <nav class="legal-toc" aria-label="目次">
+        <a href="#terms">利用規約</a>
+        <a href="#privacy">プライバシーポリシー</a>
+        <a href="#licenses">使用しているソフトウェア</a>
+      </nav>
+
+      <section id="terms">
+        <h2>利用規約</h2>
+        <p>
+          この利用規約（以下「本規約」）は、SketchDB（以下「本サービス」）の利用条件を定めるものです。
+          本サービスを利用した時点で、本規約に同意したものとみなします。
+        </p>
+
+        <h3>1. 本サービスについて</h3>
+        <ol>
+          <li>本サービスは、CREATE TABLE 文などのSQLからER図やテーブル定義書を作成する無料のWebツールです。</li>
+          <li>本サービスは試験提供（Beta）中です。運営者は、予告なく本サービスの内容を変更し、または提供を中断・終了することがあります。</li>
+        </ol>
+
+        <h3>2. 禁止事項</h3>
+        <p>本サービスの利用にあたり、次の行為を禁止します。</p>
+        <ol>
+          <li>法令または公序良俗に反する行為</li>
+          <li>本サービスや、本サービスを配信するサーバーに過度な負荷をかけるなど、運営を妨げる行為</li>
+          <li>本サービスを、運営者や第三者が提供するものであるかのように偽る行為</li>
+          <li>第三者の権利や利益を侵害する行為</li>
+        </ol>
+
+        <h3>3. 作成した図・定義書について</h3>
+        <p>
+          本サービスで作成した図や定義書（PNG・SVG・Markdown・CSV など）の権利は、入力したSQLの権利者に帰属します。
+          運営者は権利を主張しません。設計書や資料などに自由にお使いください。
+        </p>
+
+        <h3>4. 免責事項</h3>
+        <ol>
+          <li>
+            本サービスは現状のまま提供されます。運営者は、作成される図の正確性・完全性、特定の目的への適合性、
+            不具合がないことなどを保証しません。SQLの書き方によっては、テーブルやリレーションを正しく読み取れない場合があります。
+            重要な用途では、元のSQLと照らし合わせて確認してください。
+          </li>
+          <li>
+            本サービスの利用、または利用できなかったことにより利用者に生じた損害について、運営者は責任を負いません。
+            ただし、運営者の故意または重大な過失による場合は、この限りではありません。
+          </li>
+        </ol>
+
+        <h3>5. 本規約の変更</h3>
+        <p>運営者は、必要に応じて本規約を変更することがあります。変更後の本規約は、このページに掲載した時点から効力を生じます。</p>
+
+        <h3>6. 準拠法</h3>
+        <p>本規約は日本法に従って解釈されます。</p>
+      </section>
+
+      <section id="privacy">
+        <h2>プライバシーポリシー</h2>
+
+        <h3>1. 入力したSQLについて</h3>
+        <ol>
+          <li>入力したSQLの解析と図の作成は、すべてお使いのブラウザの中で行い、運営者や第三者に送信することはありません。</li>
+          <li>
+            さらに、ブラウザのセキュリティ機能（Content-Security-Policy）により、本サービスのページの中のプログラムが外部と通信すること（fetch や外部の画像・スクリプトの読み込みなど）を禁止しています。
+          </li>
+          <li>
+            次に開いたときのために、入力したSQL・テーブルの位置・表示の設定を、お使いのブラウザの中（localStorage）に保存します。
+            この情報は外部に送信されず、運営者も見ることはできません。
+            消したいときは、ツール画面のゴミ箱ボタンを使うか、ブラウザの設定でこのサイトのデータを削除してください。
+          </li>
+          <li>
+            「URLで共有」を使うと、入力したSQL・入力フォーマット・テーブルの位置を圧縮して、リンクのURLの「#」より後ろに入れます。
+            「#」より後ろはブラウザからサーバーへ送られないため、リンクを開いても運営者や配信元（GitHub）にSQLが届くことはありません。
+            ただし、リンクを受け取った人はSQLを見られます。社外秘のSQLを共有するときは、渡す相手と渡し方（チャットやメールの保存先など）に気をつけてください。
+          </li>
+        </ol>
+
+        <h3>2. アクセス解析について</h3>
+        <p>
+          本サービスは、現在アクセス解析ツールや Cookie を使用していません。
+          なお、本サービスは GitHub Pages で配信しているため、配信の仕組みとして、GitHub がアクセスの記録（IPアドレスなど）を取得する場合があります。
+          詳しくは
+          <a href="https://docs.github.com/ja/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener"
+            >GitHub のプライバシーに関する声明</a
+          >をご覧ください。
+        </p>
+
+        <h3>3. ご意見・不具合の報告フォームについて</h3>
+        <ol>
+          <li>
+            「ご意見・不具合の報告」は Google フォームを使用しています。送信された内容は Google のサービスに保存されます
+            （<a href="https://policies.google.com/privacy?hl=ja" target="_blank" rel="noopener">Google のプライバシーポリシー</a>）。
+          </li>
+          <li>
+            送信された内容と、任意で入力された連絡先は、お問い合わせへの返信と、本サービスの改善のためにのみ使用します。
+            法令に基づく場合を除き、本人の同意なく第三者に提供することはありません。
+          </li>
+          <li>送信した内容の削除を希望する場合は、同じフォームからご連絡ください。</li>
+          <li>フォームにSQLを含める場合は、社外秘の情報を含めないでください。</li>
+        </ol>
+
+        <h3>4. 本ポリシーの変更</h3>
+        <p>運営者は、必要に応じて本ポリシーを変更することがあります。変更後の本ポリシーは、このページに掲載した時点から効力を生じます。</p>
+
+        <h3>5. お問い合わせ</h3>
+        <p>
+          本規約・本ポリシーに関するお問い合わせは、
+          <a href="https://forms.gle/hGxAKpNa1odaFe4V9" target="_blank" rel="noopener" data-feedback>ご意見・不具合の報告フォーム</a>
+          からお願いします。
+        </p>
+      </section>
+
+      <section id="licenses">
+        <h2>使用しているソフトウェア</h2>
+        <p>本サービスは、次のオープンソースソフトウェアを使用しています。</p>
+        <ul>
+          <li>
+            <a href="https://github.com/taozhi8833998/node-sql-parser" target="_blank" rel="noopener">node-sql-parser</a>
+            （SQLの解析）— Apache License 2.0
+          </li>
+          <li>
+            <a href="https://github.com/101arrowz/fflate" target="_blank" rel="noopener">fflate</a>
+            （共有リンクの圧縮・Excel ファイルの作成）— MIT License
+          </li>
+          <li>
+            <a href="https://github.com/vitejs/vite" target="_blank" rel="noopener">Vite</a>（ページの読み込み処理の一部）— MIT License
+          </li>
+        </ul>
+        <p><a href="./licenses.txt">ライセンスの全文（licenses.txt）</a></p>
+      </section>
+
+      <p class="legal-operator">運営者：hikaru1309（SketchDB）</p>
+    </main>
+
+    <footer class="about-foot">
+      <a href="./about.html">SketchDBについて</a>
+      <a href="https://forms.gle/hGxAKpNa1odaFe4V9" target="_blank" rel="noopener" data-feedback>ご意見・不具合の報告</a>
+      <span>© 2026 SketchDB</span>
+    </footer>
+  </body>
+</html>
